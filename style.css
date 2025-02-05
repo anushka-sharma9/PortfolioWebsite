@@ -469,7 +469,7 @@ a{
     background-image: url(./images/gamemenu.png);
   }
 
-  #project3 .project-content {
+  #project1 #project2 #project3 .project-content {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -477,7 +477,7 @@ a{
     width: 80%;
 }
 
-#project3 .project-subHeading {
+#project3  .project-subHeading {
   font-size: 1.2rem;
   font-weight: 500;
   color: black;
@@ -492,7 +492,7 @@ a{
 
 
 
-/*   @media (max-width:1300px) {
+  /*@media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
       color: var(--bgOrange);
@@ -731,4 +731,355 @@ footer{
   padding-right: 0px;
   display:flex;
   gap:1.2rem;
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  
+  .nav-items {
+    gap: 1rem;
+    padding: 0 2em;
+  }
+  
+  .hero-section {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-section-left {
+    align-items: center;
+  }
+
+  .hero-section-description {
+    width: 90%;
+  }
+
+  .hero-section-right .user-image {
+    width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-container {
+    gap: 60px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: 400px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+  }
+
+  .skill-container-left,
+  .skills-right {
+    width: 100%;
+  }
+
+  .skill-fade-text {
+    font-size: 10em;
+    bottom: -20%;
+  }
+
+  .contactus-heading {
+    font-size: 3em;
+  }
+
+  .contactus-sub-heading {
+    font-size: 2rem;
+  }
+
+  .form {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section-heading {
+    font-size: 28px;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .btn-pink {
+    padding: 0.6rem 1.8rem;
+    font-size: 16px;
+  }
+
+  .faded-text {
+    font-size: 5em;
+    left: 0;
+  }
+
+  .project-card {
+    height: 350px;
+  }
+
+  .project-content {
+    bottom: 10%;
+    padding: 1.5em;
+  }
+
+  .project-heading {
+    font-size: 32px;
+    line-height: 2rem;
+  }
+
+  .project-subHeading {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .icon-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .hero-section {
+    gap: 1rem;
+  }
+
+  .hero-section-left {
+    gap: 1rem;
+  }
+
+  .hero-section-heading {
+    font-size: 24px;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 28px;
+  }
+
+  .btn-pink {
+    font-size: 14px;
+  }
+
+  .project-container {
+    gap: 40px;
+  }
+
+  .project-card {
+    height: 300px;
+  }
+
+  .skills-logo {
+    width: 60px;
+  }
+
+  .contactus-heading {
+    font-size: 2.5em;
+  }
+
+  .contactus-sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .link-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-faded-text {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1024px) {
+  .project-container {
+    padding: 2rem;
+    gap: 60px;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-content {
+    position: relative; /* Fix absolute positioning issue */
+    bottom: unset;
+    left: unset;
+    right: unset;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-heading {
+    font-size: 28px;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* Ensures text stays inside */
+  }
+
+  .project-subHeading {
+    font-size: 16px;
+    width: 100%;
+    word-break: break-word;
+    text-align: center;
+    padding: 0 10px; /* Add some padding to prevent text touching edges */
+  }
+
+  .btn-grp {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-container {
+    display: flex;
+    flex-direction: column; /* Cards ek line me center me aayenge */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 30px;
+  }
+
+  .project-card {
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max limit taaki bada na ho */
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-heading {
+    font-size: 24px;
+    line-height: 1.5rem;
+  }
+
+  .project-subHeading {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 95%;
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .project-heading {
+    font-size: 22px;
+  }
+
+  .project-subHeading {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-container {
+    padding: 0.5rem;
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+  }
+
+  .project-heading {
+    font-size: 20px;
+  }
+
+  .project-subHeading {
+    font-size: 12px;
+  }
+}
+/* For larger screens */
+@media (min-width: 768px) {
+  .formfield {
+    font-size: 18px; /* Keep larger font size on bigger screens */
+    padding: 0 2rem;
+  }
+}
+
+/* For small screens (mobile version) */
+@media (max-width: 576px) {
+  .formfield {
+    font-size: 14px;  /* Further reduce font size */
+    padding: 0 1.2rem; /* Ensure padding is tight enough */
+    height: 40px;  /* Adjust height for small screens */
+  }
+
+  .form {
+    width: 72;
+    margin: 1.5rem auto;
+  }
+
+  /* Ensure the submit button scales properly */
+  #submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+  }
 }
